@@ -17,7 +17,7 @@
         console.log(data);
 
         // Get users connected to mainroom
-        socket.emit('getUsersInRoom', {'room':'MainRoom'});
+        socket.emit('getUsersInRoom', {'room':'AkcjaDemokracja'});
 
         if (debug) {
             // Subscription to rooms
@@ -36,13 +36,13 @@
 
     // Disconnected from server
     socket.on('disconnect', function (data) {
-        var info = {'room':'MainRoom', 'username':'ServerBot', 'msg':'----- Lost connection to server -----'};
+        var info = {'room':'MainRoom', 'username':'AkcjaBot', 'msg':'----- Lost connection to server -----'};
         addMessage(info);
     });
     
     // Reconnected to server
     socket.on('reconnect', function (data) {
-        var info = {'room':'MainRoom', 'username':'ServerBot', 'msg':'----- Reconnected to server -----'};
+        var info = {'room':'MainRoom', 'username':'AkcjaBot', 'msg':'----- Reconnected to server -----'};
         addMessage(info);
     });
 
@@ -113,7 +113,7 @@
         updateNickname(data);
 
         msg = '----- ' + data.oldUsername + ' is now ' + data.newUsername + ' -----';
-        var info = {'room':data.room, 'username':'ServerBot', 'msg':msg};
+        var info = {'room':data.room, 'username':'AkcjaBot', 'msg':msg};
         addMessage(info);
     });
 
