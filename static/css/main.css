@@ -50,12 +50,34 @@ input.error {
 
 
 .badge-inverse {
-    background-color:#009B37; 
+    background-color: #009B37; 
+}
+
+
+.message .well {
+    background-color: #009B37; 
+    border: 0;
+    border-radius: 0;
+}
+
+.message button {
+    font-family: FFDINWebProCondBold, sans-serif;
+    color: white;
+    background-color: #0049aa;
+    text-transform: uppercase;
 }
 
 
 
+#MainRoom_tab {
+    display: none;
+}
 
+body > .row-fluid {
+    background-color: white;
+}
 
+body {
+    background-color: #009B37; 
 
-
+}
