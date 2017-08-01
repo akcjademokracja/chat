@@ -7,7 +7,7 @@
 // ***************************************************************************
 
 var conf = { 
-    port: 8080,
+    port: 3000,
     debug: false,
     dbPort: 6379,
     dbHost: process.env['REDIS_HOST'],
