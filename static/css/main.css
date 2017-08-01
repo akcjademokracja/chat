@@ -4,17 +4,54 @@
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+	font-family: 'FFDINWebProCondBold';
+	src: url('/fonts/FFDINWebProCondBold.eot');
+	src: url('/fonts/FFDINWebProCondBold.eot?#iefix') format('embedded-opentype'),
+			url('/fonts/FFDINWebProCondBold.woff2') format('woff2'),
+			url('/fonts/FFDINWebProCondBold.woff') format('woff'),
+			url('/fonts/FFDINWebProCondBold.ttf') format('truetype');
+}
+
 input.error {
   border-color: #a94442;
 }
 
+.tab-pane {
+    border: 2px black solid;
+}
+.tab-pane .well {
+    background-color: white;
+}
 
 
+.label-info {
+    background-color: #f00600;
+}
+
+.nav-tabs > li {
+    font-family: FFDINWebProCondBold, sans-serif;
+    text-transform: uppercase;
+}
+.nav-tabs > li > a:hover {
+    color: white;
+    background-color: #0049aa;
+}
+
+.nav-tabs > li.active >  a {
+    color: #FFE100;
+    background-color: #F00600;
+}
+
+.nav-tabs > li.active >  a:hover {
+    color: #FFE100;
+    background-color: #F00600;
+}
 
 
-
-
-
+.badge-inverse {
+    background-color:#009B37; 
+}
 
 
 
