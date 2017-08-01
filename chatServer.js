@@ -7,12 +7,12 @@
 // ***************************************************************************
 
 var conf = { 
-    port: 8888,
+    port: 8080,
     debug: false,
     dbPort: 6379,
-    dbHost: '127.0.0.1',
+    dbHost: process.env['REDIS_HOST'],
     dbOptions: {},
-    mainroom: 'MainRoom'
+    mainroom: 'AkcjaDemokracja'
 };
 
 // External dependencies
