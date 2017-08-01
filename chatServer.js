@@ -12,7 +12,7 @@ var conf = {
     dbPort: 6379,
     dbHost: process.env['REDIS_HOST'],
     dbOptions: {},
-    mainroom: 'MainRoom'
+    mainroom: 'AkcjaDemokracja'
 };
 
 // External dependencies
