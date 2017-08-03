@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Czatuj z Akcją Demokracją</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -27,7 +27,7 @@
     </head>
     <body style="margin-bottom: 0px; padding-bottom: 0px;">
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+            <p class="chromeframe">Korzystasz z przestarzałej przeglądarki. <a href="http://browsehappy.com/">Zainstaluj nową wersję jak najszybciej!</a> Od tego zależy Twoje bezpieczeństwo w sieci! </p>
         <![endif]-->
 
         <!-- Content -->
@@ -39,7 +39,9 @@
                         <div class="navbar-inner">
                             <a class="brand" href="./index.html"><img class="img-responsive" style="max-height: 50px" src="/img/logo.png"/></a>
                             <ul class="nav pull-right">
-                                <li class="divider-vertical"></li>
+                                <li>
+                                  <a href="https://dzialaj.akcjademokracja.pl/surveys/96" target="_blank">Łańcuch Światła ponieśmy dalej - wypełnij ankietę</a>
+                                </li>
                                 <!-- <li class="">
                                 <a href="http://github.com/tegioz/chat" data-toggle="modal"><i class="icon-star icon-white"></i>&nbsp;Fork me on Github&nbsp;</a>
         </li>-->
@@ -58,12 +60,12 @@
                         <div class="span12">
                             <ul id="rooms_tabs" class="nav nav-tabs">
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i>&nbsp;Options&nbsp;<b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th"></i>&nbsp;Opcje&nbsp;<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#modal_joinroom" data-toggle="modal"><i class="icon-plus"></i>&nbsp;Join room</a></li>
-                                        <li><a id="b_leave_room" href="#"><i class="icon-minus"></i>&nbsp;Leave current room</a></li>
+                                        <li><a href="#modal_joinroom" data-toggle="modal"><i class="icon-plus"></i>&nbsp;Wejdź do pokoju</a></li>
+                                        <li><a id="b_leave_room" href="#"><i class="icon-minus"></i>&nbsp;Opuść pokój</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="#modal_setnick" data-toggle="modal"><i class="icon-user"></i>&nbsp;Set nickname</a></li>
+                                        <li><a href="#modal_setnick" data-toggle="modal"><i class="icon-user"></i>&nbsp;Ustaw swoje imię</a></li>
                                     </ul>
                                 </li>
                                 <!-- Room tab -->
@@ -81,7 +83,7 @@
                                 <div class="span12 well">
                                     <div id="room_messages" style="min-height:220px; max-height:220px; overflow:auto;">
                                         <!-- Message -->
-                                        <span class="label label-info">AkcjaBot</span>&nbsp;&nbsp;Welcome to the room :)<br/>
+                                      <span class="label label-info">AkcjaBot</span>&nbsp;&nbsp;Witaj w tym pokoju. Pamiętaj, że korzystając z przycisku <i>opcje</i> możesz ustawić swoje imię oraz dołączyć do innych pokojów.<br/>
                                         <!-- End Message -->
                                     </div>
                                 </div>
@@ -106,7 +108,7 @@
                     <div class="row-fluid">
                     <form class="form-inline">
                         <input id="message_text" type="text" class="form-control span11" >
-                        <button id="b_send_message" class="btn btn-primary span1">Send</button>
+                        <button id="b_send_message" class="btn btn-primary span1">Wyślij</button>
                     </form>
                     </div>
                 </div>
@@ -118,14 +120,14 @@
         <div id="modal_joinroom" class="modal hide fade">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Join room</h3>
+                <h3>Wejdź do pokoju</h3>
             </div>
             <div class="modal-body">
                 <input id="room_name" type="text" class="input-xlarge" placeholder="Room name">
-                <p><small>Room will be created if it doesn't exist</small></p>
+                <p><small>Pokój zostanie stworzony, jeżeli jeszcze nie istnieje</small></p>
             </div>
             <div class="modal-footer">
-                <a id="b_join_room" href="#" class="btn btn-primary">Join now</a>
+                <a id="b_join_room" href="#" class="btn btn-primary">Wejdź</a>
             </div>
         </div>
         <!-- End Join room modal -->
@@ -134,14 +136,14 @@
         <div id="modal_setnick" class="modal hide fade">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Set nickname</h3>
+                <h3>Ustaw swoje imię</h3>
             </div>
             <div class="modal-body">
                 <input id="nickname" type="text" class="input-xlarge" placeholder="Type your nickname here">
-                <p><small>Pick up something more cool than anonymous :)</small></p>
+                <p><small>Zachęcamy do dopisania nazwy miejscowości!</small></p>
             </div>
             <div class="modal-footer">
-                <a id="b_set_nickname" href="#" class="btn btn-primary">Set nickname</a>
+                <a id="b_set_nickname" href="#" class="btn btn-primary">Ustaw imię</a>
             </div>
         </div>
         <!-- End Set nick modal -->

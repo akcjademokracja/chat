@@ -48,6 +48,13 @@ input.error {
     background-color: #F00600;
 }
 
+.navbar .nav > li > a {
+    font-family: FFDINWebProCondBold, sans-serif;
+    text-transform: uppercase;
+    color: #FFE100;
+    font-size: 1.5em;
+}
+
 
 .badge-inverse {
     background-color: #009B37; 
