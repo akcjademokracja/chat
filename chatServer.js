@@ -103,7 +103,7 @@ io.sockets.on('connection', function(socket) {
     // Confirm subscription to user
     socket.emit('subscriptionConfirmed', {'room':conf.mainroom});
     // Notify subscription to all users in room
-    var data = {'room':conf.mainroom, 'username':'anonymous', 'msg':'----- Joined the room -----', 'id':socket.id};
+    var data = {'room':conf.mainroom, 'username':'anonymous', 'msg':'----- Dołączył_a do pokoju -----', 'id':socket.id};
     io.to(conf.mainroom).emit('userJoinsRoom', data);
 
     // User wants to subscribe to [data.rooms]
@@ -121,7 +121,7 @@ io.sockets.on('connection', function(socket) {
                 socket.emit('subscriptionConfirmed', {'room': room});
         
                 // Notify subscription to all users in room
-                var message = {'room':room, 'username':username, 'msg':'----- Joined the room -----', 'id':socket.id};
+              var message = {'room':room, 'username':username, 'msg':'----- Dołączył_a do pokoju -----', 'id':socket.id};
                 io.to(room).emit('userJoinsRoom', message);
             });
         });
@@ -198,6 +198,7 @@ io.sockets.on('connection', function(socket) {
                 var message = {'room':data.room, 'username':obj.username, 'msg':data.msg, 'date':new Date()};
                 // Send message to room
                 io.to(data.room).emit('newMessage', message);
+              message['ip'] = socket.request.headers['x-forwarded-for'];
                 logger.emit('newEvent', 'newMessage', message);
             }
         });

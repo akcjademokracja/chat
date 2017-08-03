@@ -74,6 +74,13 @@ input.error {
     text-transform: uppercase;
 }
 
+.infobox {
+    background: white;
+    color: black;
+    padding: 3em;
+    font-family: FFDINWebProCondBold, sans-serif;
+    font-size: 2em;
+}
 
 
 #MainRoom_tab {

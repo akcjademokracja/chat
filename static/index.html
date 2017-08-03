@@ -53,7 +53,7 @@
             <!-- End Header -->
 
             <!-- Rooms -->
-            <div class="row-fluid">
+            <div class="row-fluid rooms-area">
                 <div class="span12 well" style="background-color:white; border:0px"> 
                     <!-- Tabs -->
                     <div class="row-fluid">
@@ -115,6 +115,25 @@
             </div>
             <!-- End New message -->
         </div>
+
+        <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+             var then = new Date(2017, 8, 3, 17, 45);
+             var now = new Date();
+             if (now < then) {
+                 document.querySelector('.rooms-area').classList.add('hide');
+                 document.querySelector('.message').classList.add('hide');
+                 document.querySelector('#notyet').classList.remove('hide');
+             };
+         });
+        </script>
+        <div id="notyet" class="hide infobox">
+            <p>
+                Zaczynamy webinar o 18:00. Czat zostanie włączony kilka minut wcześniej. Tymczasem zapraszamy do <a href="https://dzialaj.akcjademokracja.pl/surveys/96">wypełnienia ankiety</a>.
+
+            </p>
+        </div>
+
 
         <!-- Join room modal -->
         <div id="modal_joinroom" class="modal hide fade">
