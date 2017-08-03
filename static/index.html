@@ -118,8 +118,10 @@
 
         <script>
          document.addEventListener("DOMContentLoaded", function(event) {
-             var then = new Date(2017, 8, 3, 17, 45);
+             var then = new Date(2017, 7, 3, 17, 45);
              var now = new Date();
+             console.log(now);
+             console.log(then);
              if (now < then) {
                  document.querySelector('.rooms-area').classList.add('hide');
                  document.querySelector('.message').classList.add('hide');
